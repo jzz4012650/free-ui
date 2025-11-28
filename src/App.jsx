@@ -1,37 +1,37 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import InputDemo from './demos/InputDemo'
+import TextareaDemo from './demos/TextareaDemo'
+import ButtonDemo from './demos/ButtonDemo'
+import CheckboxDemo from './demos/CheckboxDemo'
+import RadioDemo from './demos/RadioDemo'
+import SwitchDemo from './demos/SwitchDemo'
+import SelectDemo from './demos/SelectDemo'
+import ComboboxDemo from './demos/ComboboxDemo'
+import PaginationDemo from './demos/PaginationDemo'
+import DialogDemo from './demos/DialogDemo'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React + Tailwind</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-      <p className="mt-4 text-sm text-blue-500">
-        Styled with Tailwind CSS
-      </p>
-    </>
+    <div className="min-h-screen bg-white dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100">
+      <InputDemo />
+      <hr className="my-8 border-zinc-200 dark:border-zinc-800" />
+      <SelectDemo />
+      <hr className="my-8 border-zinc-200 dark:border-zinc-800" />
+      <ComboboxDemo />
+      <hr className="my-8 border-zinc-200 dark:border-zinc-800" />
+      <TextareaDemo />
+      <hr className="my-8 border-zinc-200 dark:border-zinc-800" />
+      <CheckboxDemo />
+      <hr className="my-8 border-zinc-200 dark:border-zinc-800" />
+      <RadioDemo />
+      <hr className="my-8 border-zinc-200 dark:border-zinc-800" />
+      <SwitchDemo />
+      <hr className="my-8 border-zinc-200 dark:border-zinc-800" />
+      <ButtonDemo />
+      <hr className="my-8 border-zinc-200 dark:border-zinc-800" />
+      <DialogDemo />
+      <hr className="my-8 border-zinc-200 dark:border-zinc-800" />
+      <PaginationDemo />
+    </div>
   )
 }
 
